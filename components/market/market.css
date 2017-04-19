@@ -1,0 +1,35 @@
+#market{height:100%;overflow:hidden;}
+.market{height:89%;overflow: hidden;}
+
+
+/*给左边的设置样式*/
+#goodList{height:100%;width:23.75%;float:left;overflow:auto;}
+#goodList li{height:12.5%;width:100%;float:left;text-align:center;display:table;background:#f8f8f8;border-bottom:1px solid #e0e0e0;}
+#goodList li a{width:100%;height:100%;display:table-cell;vertical-align: middle;}
+
+#choice{display:none;}
+
+#right{width:76.25%;height:87.5%;float:left;}
+
+#goods{width:100%;height:100%;overflow:auto;}
+.goods{width:100%;height:29.16%;border-bottom:1px solid lightgrey;} 
+.goods dt{width:50%;height:100%;float:left;}
+.goods dd{width:50%;height:100%;float:left;position:relative;}
+.goods dt img{height:100%;width:100%;}
+.goods dd span{color:#bcbcbc;height:20%;line-height:100%;}
+.market .add{font-size:24px;width:30%;height:30%;display:block;border:1px solid red;border-radius:50%;background:white;color:red;position:absolute;left:60%;bottom:10%;outline:none;}
+/*#market .chose{margin:1% 0;height:20%;width:25%;display:block;border:1px solid red;border-radius:3px;background:white;color:red;font-size:14px;}*/
+.goods dd p{height:20%;line-height:200%;font-weight:normal;font-size:14px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;color:black;}
+.goods dd i{text-decoration:line-through;color:#bcbcbc;}
+.goods dd b{font-weight:normal;font-size:14px;color:red;}
+
+
+#sortList{width:100%;height:12.5%;}
+#sortList li{text-align:center;width:50%;float:left;height:100%;border-bottom:1px solid lightgray;display:table;}
+#sortList li a{width:100%;height:100%;display:block;display:table-cell;vertical-align: middle;}
+
+#hideList{position:absolute;top:20%;background:rgba(255,255,255,0.8);width:76.25%;z-index:9;}
+#hideList li{float:left;padding:5%;}
+#hideList li a{height:30px;display:block;line-height:30px;font-size:16px;background:rgba(220,220,220,0.9);text-align:center;letter-spacing:2px;white-space:normal;border:1px solid lightgray;border-radius:3px;outline:none;}
+
+

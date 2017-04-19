@@ -1,0 +1,44 @@
+<div id="head">
+	<h2>爱鲜蜂</h2>
+</div>
+<div id="head02"></div>
+<div class="market">
+	<ul id="goodList">
+		<li ng-repeat="item in goodList" ng-click="changeShow(item.id)">{{item.name}}</li>
+	</ul>
+	<ul id="choice"></ul>
+	<div id="right">
+			<ul id="sortList">
+				<li><a href="javascript:void(0)" id="allSort">全部分类</a></li>
+				<li><a href="javascript:void(0)" id="differSort" ng-click="change01(item.id)">综合分类</a></li>
+			<ul id="hideList" ng-show=!isShow>
+				<!--<li ng-repeat="item in hideList" ng-show=!isShow>
+					<a href="javascript:void(0)" ng-repeat="item in hideLista">{{item.name}}</a>
+		<!--	<button ng-click="style='price'">按价格排序</button>-->
+				<!--</li>	-->
+				<li ng-show=!isShow>
+					<a href="javascript:void(0)">综合排序</a>
+					<a href="javascript:void(0)">销量最高</a>
+					<a href="javascript:void(0)">价格最高</a>
+					<a href="javascript:void(0)">价格最低</a>
+				</li>
+			</ul>
+			
+			</ul>
+			
+
+		<div id="goods">
+			<dl ng-repeat="item in goods" class="goods" >
+				<dt><img src="{{item.img}}" alt="" /></dt>
+				<dd>
+					<p>{{item.name}}</p>
+					<span>{{item.specifics}}</span>
+					<b>¥{{item.market_price}}</b>
+					<i>¥{{item.partner_price}}</i>
+					<input type="button" class="add" value="+" />
+				</dd>
+			</dl>
+			
+		</div>
+	</div>
+</div>

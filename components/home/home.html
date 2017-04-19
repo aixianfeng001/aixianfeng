@@ -1,0 +1,113 @@
+
+<div id="head">
+	<h2>爱鲜蜂</h2>
+</div>
+
+
+<!--<div id="head02"></div>-->
+	<div class="home">
+		<!--轮播图-->
+	<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" ng-repeat="item in arrSwiper">
+        		<img src="{{item.activity.img}}"/>
+        </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+	</div>
+	
+	
+	<!--menu1-->
+	<div id="menu1">
+		<ul>
+			<li ng-repeat="item in menu1">
+				<img src="{{item.activity.img}}"/>
+				<p>{{item.activity.name}}</p>
+			</li>
+		</ul>
+	</div>
+				
+	<div id="menu2">
+		<ul>
+			<li ng-repeat="item in menu2">
+				<img src="{{item.activity.img}}"/>
+			</li>
+		</ul>
+	</div>
+				
+	<div id="menu3">
+		<div id="title">
+			<img src="{{menu3title}}"/>
+		</div>
+		<div id="pic">
+			<li><img src="{{pic01}}" alt="" /></li>
+			<li><img src="{{pic02}}" alt="" /></li>
+		</div>
+		<div class="clearFloat"></div>
+		<div id="icons">
+			<ul>
+				<li ng-repeat="item in icons">
+					<div><img src="{{item.cicons_detail.img}}" alt="" /></div>
+					<p>{{item.cicons_detail.name}}</p>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="goods01">
+			<li ng-repeat="item in goods01"><img src="{{item.activity.img}}" alt="" /></li>
+		</div>
+	</div>
+	
+	<ul class="menu4">
+		<li ng-repeat="item in menu4">
+		
+				<strong>
+					{{item.category_detail.name}}
+				</strong>
+				<img src="{{item.activity.img}}" alt="" />
+			<ul>
+				<li>
+					<dl>
+						<dt><img src="{{item.category_detail.goods[0].app_mimg}}" alt="" /></dt>
+						<dd>
+							<p>{{item.category_detail.goods[0].name}}</p>
+							<span>{{item.category_detail.goods[0].specifics}}</span>
+							<b>¥{{item.category_detail.goods[0].partner_price}}</b>
+							<i>¥{{item.category_detail.goods[0].market_price}}</i>
+							<input type="button" class="add" value="+" />
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt><img src="{{item.category_detail.goods[1].app_mimg}}" alt="" /></dt>
+						<dd>
+							<p>{{item.category_detail.goods[1].name}}</p>
+							<span>{{item.category_detail.goods[1].specifics}}</span>
+							<b>¥{{item.category_detail.goods[1].partner_price}}</b>
+							<i>¥{{item.category_detail.goods[0].market_price}}</i>
+							<input type="button" class="add" value="+" />
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt><img src="{{item.category_detail.goods[2].app_mimg}}" alt="" /></dt>
+						<dd>
+							<p>{{item.category_detail.goods[2].name}}</p>
+							<span>{{item.category_detail.goods[2].specifics}}</span>
+							<b>¥{{item.category_detail.goods[2].partner_price}}</b>
+							<i>¥{{item.category_detail.goods[0].market_price}}</i>
+							<input type="button" class="add" value="+" />
+						</dd>
+					</dl>
+				</li>
+			</ul>
+			
+			
+		</li>
+	</ul>
+		
+	
+
